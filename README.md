@@ -1,5 +1,5 @@
 # pfmix
-# R code for visualizing and inferring the structure of Plasmodium falciparum mixture
+### Inferring the structure of Plasmodium falciparum mixture
 
 This forms a basic README for the pfmix code and workflows. Hopefully, it will provide sufficient information 
 (or, more precisely points to information) that any individual with basic R knowledge could retool these scripts
