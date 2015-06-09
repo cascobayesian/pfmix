@@ -15,7 +15,6 @@ The key scripts are:
   * init.r
   * clean.r
   * run.model.r
-  * models.r
   * funcs.r 
 
 Soon, all of this will be turned into an R package.
