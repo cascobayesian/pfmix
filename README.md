@@ -8,9 +8,6 @@ to implement the model on their own machine.
 In general, once the data is in the right format and has been cleaned for a few different attributes, the model
 should run easily and (relatively) quickly. At least that's the theory. 
 
-The key document for getting the data into the right format, doing initial qc checks, and running the model is:
-  * manual.pdf
-  
 The key scripts are:
   * init.r
   * clean.r
