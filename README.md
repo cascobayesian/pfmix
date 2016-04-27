@@ -47,7 +47,7 @@ Then, any of the frequentist estimators are easy. Here's the direct estimator:
 
 `f <- calc.f.fst(wasf,allele.freq)`
 
-The other two are the initial (`calc.f.ini`) and the regressed (`calc.f.reg`), which take the same inputs. There is also a fully Bayesian approach that will simultaneously estimate all of the allele frequencies and the inbreeding coefficients. To do this, you'll have to refactor the matrices a bit into an array by:
+The other two are the initial (`calc.f.ini`) and the regressed (`calc.f.reg`), which take the same inputs. You can learn about the differences between these in our paper [here](http://biorxiv.org/content/early/2015/06/29/021519). There is also a fully Bayesian approach that will simultaneously estimate all of the allele frequencies and the inbreeding coefficients. To do this, you'll have to refactor the matrices a bit into an array by:
 
 `data.set = abind(ref,non,along=3)`
 
@@ -55,7 +55,7 @@ Then, just run the MCMC:
 
 `mcmc.run <- mcmc.fstat(data.set,num.iter,thin)`
 
-
+Unlike the frequentist estimators
 
 
 
