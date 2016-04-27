@@ -55,7 +55,9 @@ Then, just run the MCMC:
 
 `mcmc.run <- mcmc.fstat(data.set,num.iter,thin)`
 
-Unlike the frequentist estimators
+Unlike the frequentist estimators, the output here includes the whole thinned chain, so you'll have to do a little work to pull out the estimates. If you'd just like the last estimate of `f`, use
+
+`f<-mcmc.run[[num.iter/thin]]$f`
 
 
 
