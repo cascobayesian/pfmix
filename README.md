@@ -39,6 +39,9 @@ where `sample.name' is whatever name you want for the file. (It will try to writ
 
 You can also use a similar framework to estimate the inbreeding coefficients for samples. This requires that you have an ambient population that the sample is drawn from, which you most likely already have if you've calculated `allele.freq` above. 
 
+Other than that the framework is pretty similar: calculations are on sample-by-sample basis so it's necessary to pull out the data for each sample first. In this case, the functions require the within-sample allele frequency rather than the full data set, so we first transform them:
+
+`wsaf <- non[,s]/(non[,s]+ref[,s])
 
 
 
