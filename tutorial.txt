@@ -1,0 +1,26 @@
+TUTORIAL
+
+How to clean your data? 
+	Why is this necessary?
+		Good for you, good for reviewers, good for science
+	Visualize levels
+		Cleaning is a relative thing
+	Examples for cleaning
+	Population structure
+		What this shows and what it doesn't
+
+
+Inferring allele frequencies
+
+Inferring f-statistics
+	- Frequentist estimators
+	- Bayesian approach
+		- Posterior certainty plot
+
+A simple test: is my sample mixed?
+	Calculating the Bayes factor
+
+Looking a whole population
+	Plot them
+
+	
