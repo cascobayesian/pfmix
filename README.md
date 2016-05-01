@@ -17,9 +17,9 @@ Starting off, it's going be useful to calculate the allele frequency for the SNP
 
 ### Mixture model
 
-This model works sample-by-sample, so the first thing you'll need is to pull out the data for a sample of interest, say `s`. You are also going to want to choose a maximum number of strains to check (Eight is a reasonable value, but smaller also works).
+As model works sample-by-sample, the first thing you'll need is to pull out the data for a sample of interest, say `s`. You will also need to choose a maximum number of strains to check (eight is a reasonable value, but smaller also works; much higher will be very slow).
 
-You will also need to set the number of iterations and the amount of thinning in the chain. I'll use 4000 and 10, respectively. 
+You will also need to set the number of iterations and the amount of thinning in the chain. I'll use 4000 and 10, respectively, which are the default values. 
 
 Here's the code for all of this:
 
