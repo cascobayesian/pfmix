@@ -3,7 +3,7 @@ R code for visualizing and inferring the structure of Plasmodium falciparum mixt
 
 This README covers two distinct but related functions that you can find in the pfmix package: how to infer the structure of strain mixture using a Bayesian mixture model, and how to infer the inbreeding coefficient for mixed samples using one of the four estimators. 
 
-Both of these functionalities applies to the same sort of data: whole-genome sequence read counts collected from clinical samples. These data are going to be best if there is no PCR performed (direct sequencing) but should work tolerably even if PCR was used. 
+Both of these functionalities apply to the same sort of data: whole-genome sequence read counts collected from clinical samples. These data are going to be best if there is no PCR performed (direct sequencing) but should work tolerably even if PCR was used. 
 
 To get started with either calculation, first download the package and install it. There's some helpful advice elsewhere on the interwebs for this: [here](http://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source) and [here](https://cran.r-project.org/doc/manuals/r-devel/R-admin.html). Then load the library using `library(pfmix)`.
 
