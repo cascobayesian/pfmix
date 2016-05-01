@@ -3,13 +3,13 @@ R code for visualizing and inferring the structure of Plasmodium falciparum mixt
 
 This README covers two distinct but related functions that you can find in the pfmix package: how to infer the structure of strain mixture using a Bayesian mixture model, and how to infer the inbreeding coefficient for mixed samples using one of the four estimators. 
 
-Both of these functionalities apply to the same sort of data: whole-genome sequence read counts collected from clinical samples. These data are going to be best if there is no PCR performed (direct sequencing) but should work tolerably even if PCR was used. 
+Both of these functionalities apply to the same sort of data: whole-genome sequence read counts collected from clinical samples. These data are going to give the most accurarate ressults when no PCR performed (i.e. direct sequencing) but should work tolerably well even if PCR was used. 
 
-To get started with either calculation, first download the package and install it. There's some helpful advice elsewhere on the interwebs for this: [here](http://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source) and [here](https://cran.r-project.org/doc/manuals/r-devel/R-admin.html). Then load the library using `library(pfmix)`.
+To get started with either calculation, first download the package and install it. There is some helpful advice elsewhere on the interwebs for this: [here](http://stackoverflow.com/questions/1474081/how-do-i-install-an-r-package-from-source) and [here](https://cran.r-project.org/doc/manuals/r-devel/R-admin.html). Then load the library using `library(pfmix)`.
 
 Both calculations rely on data sets that assume a biallelic structure, so that data is naturally formulated as two matrices: one with all the reference read counts, and one with all the non-reference read counts. Once you've loaded the library, you can load some example data by typing `data(pf_data)`. This will load two matrices: `ref` and `non`. Both include the first 199 SNPs from 344 Ghanaian samples (rows are SNPs, columns are samples). These data derive from the genuinely excellent [PF3K resource](https://www.malariagen.net/data/pf3k-3).
 
-In both use cases, it's going be useful to calculate the allele frequency for the SNPs. You can do that with this code:
+Starting off, it's going be useful to calculate the allele frequency for the SNPs. You can do that with this code:
 
 `library(abind)`
 
